@@ -54,42 +54,6 @@ export const login = async (req, res) => {
 
 
 
-//   // RESET PASSWORD
-//   export const resetPassword = (req,res) => {
-// const {email} = req.body;
-// const user = User.findOne({'email': email});
-// if (!user) return res.status(400).json({msg: "email not exist"});
-// const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {expiresIn: "1d"});
-
-// var transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   auth: {
-//     user: 'youremail@gmail.com',
-//     pass: 'yourpassword'
-//   }
-// });
-
-// var mailOptions = {
-//   from: user.email,
-//   to: 'hamadkhann1010@gmail.com',
-//   subject: 'RESET PASSWORD EMAIL',
-//   text: `You are receiving this because you (or someone else) have requested the reset of the password for your account.
-//   Please click on the following link, or paste this into your browser to complete the process:
-//   http://localhost:3002/reset/${token}
-//   If you did not request this, please ignore this email and your password will remain unchanged.`
-// };
-
-// transporter.sendMail(mailOptions, function(error, info){
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     return res.send({message: "success"});
-//   }
-// });
-
-// res.status(200).json({user})
-//   }
-
 
 
 
